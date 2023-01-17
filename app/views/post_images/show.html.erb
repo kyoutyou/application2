@@ -33,6 +33,7 @@
     <% if post_comment.user == current_user %>
       <%= link_to "削除", post_image_post_comment_path(post_comment.post_image, post_comment), method: :delete %>
     <% end %>
+  <% end %>  
 </div>
 
 <div>
@@ -41,4 +42,5 @@
     <%= f.submit "送信する" %>
   <% end %>
 </div>
-<% end %>
+
+
